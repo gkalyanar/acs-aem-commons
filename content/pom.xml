@@ -62,11 +62,6 @@
                             <artifactId>acs-aem-commons-bundle</artifactId>
                             <target>/apps/acs-commons/install</target>
                         </embedded>
-                        <embedded>
-                            <groupId>${project.groupId}</groupId>
-                            <artifactId>acs-aem-commons-bundle-twitter</artifactId>
-                            <target>/apps/acs-commons/install</target>
-                        </embedded>
                     </embeddeds>
                     <targetURL>http://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
                 </configuration>
@@ -160,11 +155,6 @@
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>acs-aem-commons-bundle-twitter</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
             <groupId>javax.jcr</groupId>
             <artifactId>jcr</artifactId>
         </dependency>
@@ -198,10 +188,6 @@
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.twitter4j</groupId>
-            <artifactId>twitter4j-core</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
